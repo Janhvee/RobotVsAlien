@@ -1,0 +1,167 @@
+body {
+   margin:0px 0px 50px 0px;
+   padding:0;
+}
+.wrapper {
+  margin-top: 40px;
+  /* overflow: hidden; */
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sides {
+  position: relative;
+  animation: 0.7s war ease 2s both;
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+}
+
+@keyframes war {
+  0% {
+    grid-gap: 100vw;
+  }
+
+  12% {
+    grid-gap: 90vw;
+  }
+
+  24% {
+    grid-gap: 57vw;
+  }
+
+  36% {
+    grid-gap: 3vw;
+  }
+
+  54% {
+    grid-gap: 25vw;
+  }
+
+  74% {
+    grid-gap: 2.5vw;
+  }
+
+  84% {
+    grid-gap: 6.25vw;
+  }
+
+  92% {
+    grid-gap: .7vw;
+  }
+
+  96% {
+    grid-gap: 1.5vw;
+  }
+
+  100% {
+    grid-gap: 0vw;
+  }
+}
+
+
+.side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 6vw;
+}
+
+.robot {
+  background: #ff652f;
+  color: white;
+}
+
+.alien {
+  background: #14a76e;
+  color: white;
+  flex-direction: column-reverse;
+}
+
+.name {
+  margin: 0.3em;
+}
+
+.emoji {
+  font-size: 3em;
+  margin: 0.1em;
+}
+
+.versus {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+  background: white;
+  border-radius: 50%;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4vw;
+  color: #123456;
+  border: 10px solid;
+  border-color: #14a76e #ff652f #ff652f #14a76e;
+  transform: rotate(-45deg);
+}
+
+.versus span {
+  transform: rotate(35deg);
+}
+
+/* ====== IMAGE SLIDING GALLARY ===== */
+
+.slideshow {
+  height:400px;
+  width:300px;
+  margin:10px auto;
+  border:1px solid #272727;
+  box-shadow:10px 10px 5px #888888 ;
+/* box-shadow:0px 40px 40px #888888, 0px 40px 40px red ; */
+  border-radius:50px;
+/*  animation: anim 1s ease; */
+}
+.slides {
+  height:400px;
+  width:300px;
+  position:absolute;
+  border-radius:50px;
+}
+.btn {
+  position:relative;
+  top:200px;
+  height:40px;
+  width:40px;
+  border:none;
+  border-radius:10px;
+  opacity:0.5;
+  background:black;
+  color:white;
+  font-size:20px;
+}
+#btn1:hover {
+  box-shadow:10px 0px 20px 0px black;
+}
+#btn2:hover {
+  box-shadow: 10px 0px 20px 0px black;
+}
+#btn2 {
+  position:relative;
+  float:right;
+}
+@keyframes anim {
+  from {
+    width: 400px;
+  }
+
+  to {
+    width: 200px;
+  }
+}
+
+
